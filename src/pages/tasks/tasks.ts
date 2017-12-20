@@ -1,5 +1,5 @@
 /*
-Docux 2 mobile version 
+Docux 2 mobile version (prototype) 
 By Andreas Valero
  */
 

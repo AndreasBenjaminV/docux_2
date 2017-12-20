@@ -1,0 +1,10 @@
+{
+  "id": "1",
+  "name": "Tarea 1", 
+  "tipo_tramite": "Despido",
+  "autor": "Superman",
+  "fecha_creacion":"12/12/17",
+  "tipo_documento":"Carta", 
+  "expediente":"Secretos X"
+}
+  
