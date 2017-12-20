@@ -1,11 +1,10 @@
+/*
+Docux 2 mobile version 
+By Andreas Valero
+ */
+
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-/**
- * Generated class for the TasksPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -13,11 +12,27 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'tasks.html',
 })
 export class TasksPage {
+
+  id: string;
+  name: string;
+  tipo_tramite: string;
+  tipo_documento: string;
+  autor: string;
+  fecha_creacion: string;
+  expediente: string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    var name = this.navParams.get('name')
-    console.log(name);
+    this.id = this.navParams.get('id')
+    this.name = this.navParams.get('name')
+    this.tipo_tramite = this.navParams.get('tipo_tramite')
+    this.tipo_documento = this.navParams.get('tipo_documento')
+    this.autor = this.navParams.get('autor')
+    this.fecha_creacion = this.navParams.get('fecha_creacion')
+    this.expediente = this.navParams.get('expediente')
+    console.log(this.name)
+      
   }
-} 
+}

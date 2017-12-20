@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header id="home">
   <ion-navbar>
     <ion-title>
       Lista de tareas
@@ -9,7 +9,7 @@
 <ion-content padding>
   <ion-grid>
     <ion-row>
-      <ion-item *ngFor="let hero of heroes" (click)="login(hero.name)">
+      <ion-item *ngFor="let hero of heroes" (click)="task_page(hero.name)">
         <h3>{{hero.id}} - {{hero.name}}</h3>
       </ion-item>
     </ion-row>
