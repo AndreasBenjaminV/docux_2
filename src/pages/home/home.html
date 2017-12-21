@@ -1,19 +1,54 @@
-<ion-header id="home">
+<ion-header id="home" >
   <ion-navbar>
+  <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>
       Lista de tareas
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-grid>
-    <ion-row>
-      <ion-item *ngFor="let hero of datas" (click)="task_page(hero.name)">
-        <h3>{{hero.id}} - {{hero.name}}</h3>
-      </ion-item>
-    </ion-row>
-  </ion-grid>
 
+
+<ion-content class="sidemenu_ion_content" padding>
+  <ion-item class="yellow_line">  
+    <h1>Mis tareas</h1  >
+    <span>A continuación se listan todas las</span>
+    <br><span>tareas que aún no se han finalizado</span>
+  </ion-item>
+
+  <ion-item class=blue>
+    <ion-grid>
+      <ion-row>
+          <ion-col col-xs-4><h4>Tomar Tarea </h4></ion-col>
+          <ion-col col-xs-4><h4>Identificador</h4></ion-col>
+          <ion-col col-xs-6><h4>Materia</h4></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-xs-4>
+            <ion-item *ngFor="let hero of heroes">
+                <input type="checkbox">
+            </ion-item>
+          </ion-col>    
+        <ion-col col-xs-4>
+            <ion-item *ngFor="let hero of heroes" (click)="task_page(hero.name)">
+                <h3>{{hero.name}}</h3>
+            </ion-item>
+          </ion-col>
+          <ion-col col-xs-4>
+              <ion-item *ngFor="let hero of heroes" >
+                  <h3>{{hero.tipo_tramite}}</h3>
+              </ion-item>
+            </ion-col>    
+      </ion-row>
+    </ion-grid>
+  </ion-item>
 
 </ion-content>

@@ -8,7 +8,7 @@ By Andreas Valero
   </ion-navbar>
 </ion-header>
 
-
+<!-- 
 <ion-content padding>
   <ul>Id del documento:  {{id}} </ul>
   <ul>Tipo de tramite:   {{tipo_tramite}} </ul>
@@ -16,4 +16,77 @@ By Andreas Valero
   <ul>Fecha de creación: {{fecha_creacion}} </ul>
   <ul>Tipo de documento: {{tipo_documento}} </ul>
   <ul>Expediente:        {{expediente}} </ul>
+</ion-content>
+-->
+
+<ion-content class="sidemenu_ion_content" padding>
+<ion-item class="yellow_line">
+  <ul>Detalle de tarea: {{name}}</ul>
+</ion-item>
+
+  <ion-item>
+    <ion-row>
+      <ion-col col-8>
+        <ion-row>
+          <ion-item>
+            <h6>Tipo de tramite:</h6>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <h6>Creado por:</h6>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <h6>Fecha de creación</h6>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <h6>Tipo de documento</h6>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <h6>Expediente relacionado</h6>
+          </ion-item>
+        </ion-row>
+      </ion-col>
+      <ion-col col-4>
+        <ion-row>
+          <ion-item>
+            <h6>Oficina de partes</h6>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <h6>John Doe</h6>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <h6>3/7/2017</h6>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <h6>Oficio</h6>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <h6>Si</h6>
+          </ion-item>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+
+  <br>
+  <ion-row>
+      <ion-col col-6>
+          <button ion-button round (click)="back_to_home()">Vovler</button>
+      </ion-col>
+  </ion-row>
 </ion-content>

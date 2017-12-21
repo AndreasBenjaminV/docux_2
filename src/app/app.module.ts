@@ -7,6 +7,7 @@ import { HttpModule } from '@angular/http';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { TasksPage } from '../pages/tasks/tasks';
+import { TaskListProvider } from '../providers/task-list/task-list';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TasksPage } from '../pages/tasks/tasks';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    TaskListProvider
   ]
 })
 export class AppModule {}

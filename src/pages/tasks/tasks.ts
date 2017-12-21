@@ -5,6 +5,7 @@ By Andreas Valero
 
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 @IonicPage()
 @Component({
@@ -33,6 +34,9 @@ export class TasksPage {
     this.fecha_creacion = this.navParams.get('fecha_creacion')
     this.expediente = this.navParams.get('expediente')
     console.log(this.name)
-      
+  }
+
+  back_to_home(){
+    this.navCtrl.push(HomePage);
   }
 }

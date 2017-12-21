@@ -1,1 +1,18 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-nav  [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+    
+      <ion-toolbar>
+        <ion-title class="blue"><img src="../assets/imgs/logo_docux2.PNG"></ion-title>
+      </ion-toolbar>
+    
+      <ion-content class="blue">
+        <ion-list >
+          <button class="blue" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+            {{p.title}}
+          </button>
+        </ion-list>
+      </ion-content>
+    
+    </ion-menu>
+    
+    <ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
